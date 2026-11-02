@@ -7,3 +7,13 @@ he'll walk around, and shed light everywhere (how am i gonna connect java and go
 he'll say dumb puns too
 
 gotta make a fire shader as well too
+
+
+Basically, turn the users screen into a dark mess, and hide some SPOOKY assets there too! light switch at random spot.
+
+Maybe try making a maze too?
+
+add in little candles
+
+maybe a desktop pet candle to go with it too?
+dd

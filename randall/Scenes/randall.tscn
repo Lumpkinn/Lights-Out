@@ -1,3 +1,93 @@
 [gd_scene format=3 uid="uid://city74em0e3a6"]
 
+[ext_resource type="Script" uid="uid://bqb4amiaud4sn" path="res://Scenes/randall.gd" id="1_q1sie"]
+[ext_resource type="Texture2D" uid="uid://clj8pqe6oyn2o" path="res://Assets/randall.png" id="2_bdihg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hxvo7"]
+atlas = ExtResource("2_bdihg")
+region = Rect2(8, 0, 35, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v4xr5"]
+atlas = ExtResource("2_bdihg")
+region = Rect2(43, 0, 35, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vxa8l"]
+atlas = ExtResource("2_bdihg")
+region = Rect2(78, 0, 35, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vbx4x"]
+atlas = ExtResource("2_bdihg")
+region = Rect2(113, 0, 35, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tytk4"]
+atlas = ExtResource("2_bdihg")
+region = Rect2(8, 64, 35, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_djhmb"]
+atlas = ExtResource("2_bdihg")
+region = Rect2(43, 64, 35, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2wt4k"]
+atlas = ExtResource("2_bdihg")
+region = Rect2(78, 64, 35, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cd5qy"]
+atlas = ExtResource("2_bdihg")
+region = Rect2(113, 64, 35, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6aa0u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hxvo7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v4xr5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vxa8l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vbx4x")
+}],
+"loop": 2,
+"name": &"BlinkStationary",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tytk4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_djhmb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2wt4k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cd5qy")
+}],
+"loop": 1,
+"name": &"Walk",
+"speed": 2.5
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v2jr1"]
+radius = 16.0
+height = 64.0
+
 [node name="Randall" type="Node2D" unique_id=720502778]
+position = Vector2(97, 114)
+scale = Vector2(2.639999, 2.639999)
+script = ExtResource("1_q1sie")
+
+[node name="RandallSprite" type="AnimatedSprite2D" parent="." unique_id=1239155578]
+sprite_frames = SubResource("SpriteFrames_6aa0u")
+animation = &"Walk"
+frame_progress = 0.44177496
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1831046034]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1765045354]
+position = Vector2(-1, 0)
+shape = SubResource("CapsuleShape2D_v2jr1")
