@@ -1,0 +1,9 @@
+Part 2: Desktop pet light
+Make a candle, he'll be randall
+
+he'll walk around, and shed light everywhere (how am i gonna connect java and godot?)
+(export his current position to a file, and then read the file in java!!!! im a genius!!)
+
+he'll say dumb puns too
+
+gotta make a fire shader as well too
