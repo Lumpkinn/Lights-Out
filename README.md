@@ -12,9 +12,12 @@ Allowing users to click on things underneath the overlay
 removing the jittery effect from the overlay
 adding in some background effects, and shader code to make the effect look nicer.
 Making the desktop pet have the same effect as the cursor.
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/d0306d2f-7bcc-4e01-a6b9-ce515a698c88" />
 
 <h3>How to run</h3>
-Extract and run the .jar file, and make sure everything is still inside of the dist..
+Extract and run the .jar file, and make sure everything is still inside of the dist.
+To open a .jar file in windows, make sure that you have java installed, which you can do <a href="https://www.java.com/en/download/">here.</a> After that, just add find the .jar file, right click, and run with java.
+For Linux users, make sure that you have java installed, and go to the file. run the command "java -jar Overlay.jar. After that, the program should run."
 <h4>Troubleshooting</h4>
 If the program refuses to run, try reinstalling the .jar file, and ensuring that you have all the appropriate files are in the dist.
 
