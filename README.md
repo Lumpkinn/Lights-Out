@@ -4,12 +4,14 @@ A small little desktop overlay to add some spook to your computer! (Paired with 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b7629c32-5e5e-40d3-82c5-55d9e8d93ac0" />
 
 <h1>Overview</h1>
-This project creates a small overlay over the users screen.
+This project creates a small overlay over the users screen, that darkens the screen, and lights up an area around the users cursor.
+It also adds a little desktop pet to the users screen.
 
 <h2>Planned features</h2>
 Allowing users to click on things underneath the overlay
 removing the jittery effect from the overlay
 adding in some background effects, and shader code to make the effect look nicer.
+Making the desktop pet have the same effect as the cursor.
 
 <h3>How to run</h3>
 Extract and run the .jar file, and make sure everything is still inside of the dist..
@@ -18,5 +20,4 @@ If the program refuses to run, try reinstalling the .jar file, and ensuring that
 
 <h4>Attributions</h4>
 No AI was used for this project.
-
-(There was a stackoverflow post though, which you can find <a href="https://stackoverflow.com/questions/80015531/how-to-go-about-making-a-flashlight-effect-that-allows-users-to-see-the-screen-u?noredirect=1#comment141206479_80015531">here </a>)
+(There was a stack overflow post though, which you can find <a href="https://stackoverflow.com/questions/80015531/how-to-go-about-making-a-flashlight-effect-that-allows-users-to-see-the-screen-u?noredirect=1#comment141206479_80015531">here </a>)
